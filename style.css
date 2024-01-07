@@ -41,6 +41,8 @@ header section p{
 }
 main{
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
 .landing{
     background-image: url("img/landing-background.png");
@@ -67,4 +69,28 @@ footer{
     justify-content: space-between;
     align-items: center;
     border-radius: 1rem;
+}
+table a{
+    text-decoration: none;
+    color: black;
+
+}
+
+table.homepage{
+    background-color: #D9D9D9;
+    width: 90%;
+    height: 70vh;
+    border-radius: 1rem;
+    border-spacing: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 1rem gray;
+    font-size: 3rem;
+}
+table.homepage tr td{
+    background-color: #B0ECFF;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0.2rem 0.2rem 1rem gray;
+}
+table img{
+    height: 5rem;
 }
