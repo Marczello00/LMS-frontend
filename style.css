@@ -2,6 +2,8 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 100%;
 }
+
+/* Header of LMS*/
 body header img{
     width: 5rem;
     height: 5rem;
@@ -39,11 +41,22 @@ header section button{
 header section p{
     font-style: italic;
 }
+
+
+/*Content of pages*/
 main{
     margin-top: 2rem;
     display: flex;
     justify-content: center;
 }
+main>section{
+    background-color: #F9F9F9;
+    width: 80%;
+    justify-content: center;
+}
+
+
+/* For landing page */
 .landing{
     background-image: url("img/landing-background.png");
     background-repeat: no-repeat;
@@ -59,23 +72,52 @@ main{
     text-shadow: 1px 1px #0012B7;
     font-weight: lighter;
 }
-footer{
-    background-color: #D9D9D9;
-    padding: 1rem;
-    margin-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display:flex;
+
+
+/* Navigation where necessary*/
+main nav{
+    display: flex;
     justify-content: space-between;
+    padding: 2rem;
+    background-color: #B0ECFF;
     align-items: center;
     border-radius: 1rem;
+    font-size: 1rem;
+}
+main nav p.title{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+main nav button{
+    background-color: #50A4BE;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 10rem;
+}
+main nav button#delete{
+    background-color: #E83D32;
+}
+
+
+/* Every table */
+table{
+    margin-top: 2rem;
 }
 table a{
     text-decoration: none;
     color: black;
-
+}
+table img{
+    height: 5rem;
 }
 
+
+/* homepages of user and librarian */
 table.homepage{
     background-color: #D9D9D9;
     width: 90%;
@@ -91,6 +133,54 @@ table.homepage tr td{
     text-align: center;
     box-shadow: 0.2rem 0.2rem 1rem gray;
 }
-table img{
+
+
+/* Table for book or user selection*/
+table.content{
+    background-color: #D9D9D9;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem gray;
+}
+table.content thead, table.content thead tr{
+    background-color: #DAF3FB;
+    font-size: 2rem;
+    height: 3rem;
+}
+table.content tbody{
+    font-size: 1rem;
+    text-align: center;
+}
+table.content tbody tr td{
     height: 5rem;
+}
+table.content tbody tr:nth-child(odd){
+    background-color: #B0ECFF;
+}
+table.content tbody tr:nth-child(even){
+    background-color: #E7F9FF;
+}
+table.content tbody tr td button{
+    background-color: #50A4BE;
+    color: white;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    margin-left: 1rem;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+
+/* Footer of LMS*/
+footer{
+    background-color: #D9D9D9;
+    padding: 1rem;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
 }
