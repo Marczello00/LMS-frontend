@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>LMS-Register</title>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-</head>
-<body>
-  <h1>Library Management System</h1>
-  <h2>Register</h2>
-
-  <form>
-    <a>Name:</a><br>
-    <input type="text" name="name" placeholder="..."><br>
-    <a>Last name:</a>
-    <br><input type="text" name="last_name" placeholder="..."><br>
-    <a>Phone number:</a>
-    <br><input type="tel" name="phone_number" placeholder="+351"><br>
-    <a>Birth date:</a>
-    <br><input type="date" name="birth_date" placeholder="Birth Date"><br>
-    <a>Email:</a>
-    <br><input type="email" name="email" placeholder="example@domain.com"><br>
-    <a>Password:</a>
-    <br><input type="password" name="password" placeholder="********"><br>
-    
-    <a href="landing.html"><button type="button">Cancel</button></a>
-    <a href="librarianhomepage.html"><button type="button">Register</button></a>
-  </form>
-</body>
+  <head>
+    <title>LMS-Register</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header class="unauthorized">
+      <h1>Library Management System</h1>
+    </header>
+    <main>
+      <section>
+        <form>
+          <h2>Register</h2>
+          <a>Name:</a>
+          <input type="text" name="name" placeholder="..." />
+          <a>Last name:</a>
+          <input type="text" name="last_name" placeholder="..." />
+          <a>Phone number:</a>
+          <input type="tel" name="phone_number" placeholder="+351" />
+          <a>Birth date:</a>
+          <input type="date" name="birth_date" placeholder="Birth Date" />
+          <a>Email:</a>
+          <input type="email" name="email" placeholder="example@domain.com" />
+          <a>Password:</a>
+          <input type="password" name="password" placeholder="********" />
+          <section>
+            <a href="landing.html">
+              <button class="cancel" type="button">Cancel</button>
+            </a>
+            <a href="librarianhomepage.html">
+              <button type="button">Register</button>
+            </a>
+          </section>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

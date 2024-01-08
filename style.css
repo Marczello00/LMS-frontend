@@ -19,6 +19,9 @@ header{
     align-items: center;
     border-radius: 1rem;
 }
+header.unauthorized{
+    justify-content: center;
+}
 h1 {
     font-size: 3rem;
     margin: 0;
@@ -181,6 +184,7 @@ form{
     gap: 0;
 }
 form a{
+    text-decoration: none;
     margin-top: 2rem;
 }
 form button{
@@ -201,6 +205,13 @@ form input, form textarea{
     padding: 0.5rem;
     width: 20rem;
     font-size: 1.2rem;
+
+}
+form section{
+margin-top: 2rem;
+}
+form button.cancel{
+    background-color: #E83D32;
 
 }
 
