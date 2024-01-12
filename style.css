@@ -76,7 +76,7 @@ main > section {
 
 /* Navigation where necessary*/
 main nav {
-  display: flex;
+display: flex;
   justify-content: space-between;
   padding: 2rem;
   background-color: #b0ecff;
@@ -152,10 +152,27 @@ div.homepage div.item{
 }
 div.homepage div.item:hover{
   background-color: #d1d7e0;
+
+/* homepages of user and librarian homepage(table) */
+table.homepage {
+  background-color: #d9d9d9;
+  width: 90%;
+  height: 70vh;
+  border-radius: 1rem;
+  border-spacing: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 1rem gray;
+  font-size: 3rem;
+}
+table.homepage tr td {
+  background-color: #b0ecff;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0.2rem 0.2rem 1rem gray;
 }
 
 /* Table for book or user selection*/
 table.content {
+  background-color: #d9d9d9;
   width: 100%;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem gray;
@@ -168,10 +185,18 @@ table.content thead tr {
 }
 table.content tbody {
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
 }
 table.content tbody tr td {
   height: 5rem;
+  width: 50%;
+  padding-inline-end: 1rem;
+}
+table.listbooks tbody tr td {
+  width: 33%;
+}
+table.accountsettings tbody tr td {
+  width: 25%;
 }
 table.content tbody tr:nth-child(odd) {
   background-color: #b0ecff;
@@ -189,15 +214,35 @@ table.content tbody tr td button {
   font-size: 0.8rem;
   cursor: pointer;
 }
+td.actions {
+  width: 1%;
+  padding: 0;
+  padding-inline: 0.5rem;
+}
 
 /* Form for adding new book or user */
 form {
   margin-top: 2rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 0;
 }
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+form > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form div > div > div {
+  display: flex;
+  justify-content: center;
+}
+
 form a {
   text-decoration: none;
   margin-top: 2rem;
@@ -218,7 +263,7 @@ form textarea {
   border-radius: 0.5rem;
   border: 1px solid #50a4be;
   padding: 0.5rem;
-  width: 20rem;
+  width: 100%;
   font-size: 1.2rem;
 }
 form section {
