@@ -115,21 +115,44 @@ table img {
   height: 5rem;
 }
 
-/* homepages of user and librarian homepage(table) */
-table.homepage {
-  background-color: #d9d9d9;
-  width: 90%;
-  height: 70vh;
-  border-radius: 1rem;
-  border-spacing: 0.5rem;
-  box-shadow: 0.5rem 0.5rem 1rem gray;
-  font-size: 3rem;
+/*User and librarian homepage*/
+div.homepage {
+  display: flex;
+  flex-direction: column;
 }
-table.homepage tr td {
-  background-color: #b0ecff;
+div.homepage a{
+  text-decoration: none;
+  color: black;
+}
+div.homepage img {
+  width: 10rem;
+  height: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+div.homepage div{
+  padding: 1rem;
   border-radius: 1rem;
-  text-align: center;
-  box-shadow: 0.2rem 0.2rem 1rem gray;
+}
+div.homepage div.userstats {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+div.homepage div.actions {
+  width: 100%;
+  display: flex;
+}
+div.homepage div.item{
+  margin: 0.5rem;
+  background-color: #e1e7f0;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem gray;
+}
+div.homepage div.item:hover{
+  background-color: #d1d7e0;
 }
 
 /* Table for book or user selection*/
