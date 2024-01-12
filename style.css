@@ -1,229 +1,242 @@
-body{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 100%;
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 100%;
 }
 
 /* Header of LMS*/
-body header img{
-    width: 5rem;
-    height: 5rem;
-    float: left;
+body header img {
+  width: 5rem;
+  height: 5rem;
+  float: left;
 }
-header{
-    background-color: #D9D9D9;
-    padding: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 1rem;
+header {
+  background-color: #d9d9d9;
+  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
 }
-header.unauthorized{
-    justify-content: center;
+header.unauthorized {
+  justify-content: center;
 }
 h1 {
-    font-size: 3rem;
-    margin: 0;
+  font-size: 3rem;
+  margin: 0;
 }
-header section{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+header section {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
-header section button{
-    background-color: #003F7F;
-    color: white;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    width: 10rem;
+header section button {
+  background-color: #003f7f;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 10rem;
 }
-header section p{
-    font-style: italic;
+header section p {
+  font-style: italic;
 }
-
 
 /*Content of pages*/
-main{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
+main {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
-main>section{
-    background-color: #F9F9F9;
-    width: 80%;
-    justify-content: center;
+main > section {
+  background-color: #f9f9f9;
+  width: 80%;
+  justify-content: center;
 }
-
 
 /* For landing page */
-.landing{
-    background-image: url("img/landing-background.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 40rem;
-    display: flex;
-    justify-content: center;
+.landing {
+  background-image: url("img/landing-background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
 }
-.landing h2{
-    padding-right: 20%;
-    width: auto;
-    margin-top: 20%;
-    text-shadow: 1px 1px #0012B7;
-    font-weight: lighter;
+.landing h2 {
+  padding-right: 20%;
+  width: auto;
+  margin-top: 20%;
+  text-shadow: 1px 1px #0012b7;
+  font-weight: lighter;
 }
-
 
 /* Navigation where necessary*/
-main nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: #B0ECFF;
-    align-items: center;
-    border-radius: 1rem;
-    font-size: 1rem;
+main nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #b0ecff;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: 1rem;
 }
-main nav p.title{
-    font-size: 2rem;
-    margin: 0;
-    padding: 0;
+main nav p.title {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
 }
-main nav button{
-    background-color: #50A4BE;
-    color: white;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    width: 10rem;
+main nav button {
+  background-color: #50a4be;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 10rem;
 }
-main nav button#delete{
-    background-color: #E83D32;
+main nav button#delete {
+  background-color: #e83d32;
 }
-
 
 /* Every table */
-table{
-    margin-top: 2rem;
+table {
+  margin-top: 2rem;
 }
-table a{
-    text-decoration: none;
-    color: black;
+table a {
+  text-decoration: none;
+  color: black;
 }
-table img{
-    height: 5rem;
-}
-
-
-/* homepages of user and librarian homepage(table) */
-table.homepage{
-    background-color: #D9D9D9;
-    width: 90%;
-    height: 70vh;
-    border-radius: 1rem;
-    border-spacing: 0.5rem;
-    box-shadow: 0.5rem 0.5rem 1rem gray;
-    font-size: 3rem;
-}
-table.homepage tr td{
-    background-color: #B0ECFF;
-    border-radius: 1rem;
-    text-align: center;
-    box-shadow: 0.2rem 0.2rem 1rem gray;
+table img {
+  height: 5rem;
 }
 
+div.homepage {
+  display: flex;
+  flex-direction: column;
+}
+div.homepage a{
+  text-decoration: none;
+  color: black;
+}
+div.homepage img {
+  width: 10rem;
+  height: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+div.homepage div{
+  padding: 1rem;
+  border-radius: 1rem;
+}
+div.homepage div.userstats {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+div.homepage div.actions {
+  width: 100%;
+  display: flex;
+}
+div.homepage div.item{
+  margin: 0.5rem;
+  background-color: #e1e7f0;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem gray;
+}
+div.homepage div.item:hover{
+  background-color: #d1d7e0;
+}
 
 /* Table for book or user selection*/
-table.content{
-    background-color: #D9D9D9;
-    width: 100%;
-    border-radius: 1rem;
-    box-shadow: 0.5rem 0.5rem 1rem gray;
+table.content {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem gray;
 }
-table.content thead, table.content thead tr{
-    background-color: #DAF3FB;
-    font-size: 2rem;
-    height: 3rem;
+table.content thead,
+table.content thead tr {
+  background-color: #daf3fb;
+  font-size: 2rem;
+  height: 3rem;
 }
-table.content tbody{
-    font-size: 1rem;
-    text-align: center;
+table.content tbody {
+  font-size: 1rem;
+  text-align: center;
 }
-table.content tbody tr td{
-    height: 5rem;
+table.content tbody tr td {
+  height: 5rem;
 }
-table.content tbody tr:nth-child(odd){
-    background-color: #B0ECFF;
+table.content tbody tr:nth-child(odd) {
+  background-color: #b0ecff;
 }
-table.content tbody tr:nth-child(even){
-    background-color: #E7F9FF;
+table.content tbody tr:nth-child(even) {
+  background-color: #e7f9ff;
 }
-table.content tbody tr td button{
-    background-color: #50A4BE;
-    color: white;
-    border-radius: 1rem;
-    padding-inline: 1rem;
-    margin-left: 1rem;
-    border: none;
-    font-size: 0.8rem;
-    cursor: pointer;
+table.content tbody tr td button {
+  background-color: #50a4be;
+  color: white;
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  margin-left: 1rem;
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
 }
-
 
 /* Form for adding new book or user */
-form{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
 }
-form a{
-    text-decoration: none;
-    margin-top: 2rem;
+form a {
+  text-decoration: none;
+  margin-top: 2rem;
 }
-form button{
-    background-color: #50A4BE;
-    color: white;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    padding-inline: 1rem;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    width: 13rem;
-
+form button {
+  background-color: #50a4be;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  padding-inline: 1rem;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 13rem;
 }
-form input, form textarea{
-    border-radius: 0.5rem;
-    border: 1px solid #50A4BE;
-    padding: 0.5rem;
-    width: 20rem;
-    font-size: 1.2rem;
-
+form input,
+form textarea {
+  border-radius: 0.5rem;
+  border: 1px solid #50a4be;
+  padding: 0.5rem;
+  width: 20rem;
+  font-size: 1.2rem;
 }
-form section{
-margin-top: 2rem;
+form section {
+  margin-top: 2rem;
 }
-form button.cancel{
-    background-color: #E83D32;
-
+form button.cancel {
+  background-color: #e83d32;
 }
 
 /* Footer of LMS*/
-footer{
-    background-color: #D9D9D9;
-    padding: 1rem;
-    margin-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 1rem;
+footer {
+  background-color: #d9d9d9;
+  padding: 1rem;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
 }

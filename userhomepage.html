@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>LMS-Homepage</title>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>LMS-Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<body>
-  <header>
-    <a href="userhomepage.html"><img src="logo.png"></a>
-    <h1>Library Management System</h1>
-    <section>
-      <p>Hi User1231!</p>
-      <a href="landing.html"><button type="button" class="primary">Logout</button></a>
-    </section>
-  </header>
+  <body>
+    <header>
+      <a href="userhomepage.html"><img src="logo.png" /></a>
+      <h1>Library Management System</h1>
+      <section>
+        <p>Hi User1231!</p>
+        <a href="landing.html"
+          ><button type="button" class="primary">Logout</button></a
+        >
+      </section>
+    </header>
 
-  <main>
+    <main>
+      <div class="homepage">
+        <div>
+          <h2>Your items</h2>
+          <div class="userstats">
 
-    <div class="container">
-      <a href="loansandreservations.html"><div class="item item-1"><img src="img/loans.png">Loans</div></a>
-      <a href="current.html"><div class="item item-2"><img src="img/current.png">Current: 2</div></a> 
-      <a href="overdue.html"><div class="item item-3"><img src="img/overdue.png">Overdue: 2</div></a> 
-      <a href="reservations.html"><div class="item item-4"><img src="img/reservation.png">Reservations: 2</div></a>
-      <a href="browsebook.html"><div class="item item-5"><img src="img/books-list.svg">Search books</div></a>
-      <a href="accountsettings.html"><div class="item item-6"><img src="img/settings.svg"> Account settings</div></a>
-    </div>
+          <a href="loansandreservations.html">
+            <div class="item item-1">
+              <img src="img/loans.png" />My Loans
+            </div>
+          </a>
 
-  </main>
+          <a href="current.html">
+            <div class="item item-2">
+              <img src="img/current.png" />Current: 2
+            </div>
+          </a>
 
-  <footer>
-    <p>Copyright &copy; 2023</p>
-  </footer>
-</body>
+          <a href="overdue.html">
+            <div class="item item-3">
+              <img src="img/overdue.png" />Overdue: 2
+            </div>
+          </a>
+
+          <a href="reservations.html">
+            <div class="item item-4">
+              <img src="img/reservation.png" />Reservations: 2
+            </div>
+          </a>
+        </div></div>
+
+        <div>
+          <h2>Your actions</h2>
+        <div class="actions">
+
+          <a href="browsebook.html">
+            <div class="item item-5">
+              <img src="img/books-list.svg" />Search books
+            </div>
+          </a>
+
+          <a href="accountsettings.html">
+            <div class="item item-6">
+              <img src="img/settings.svg" /> Account settings
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2023</p>
+    </footer>
+  </body>
 </html>
