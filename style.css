@@ -204,6 +204,9 @@ td.actions {
   padding: 0;
   padding-inline: 0.5rem;
 }
+td.overdue{
+  color: red;
+}
 
 /* Form for adding new book or user */
 form {
