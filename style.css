@@ -151,7 +151,7 @@ div.homepage div.item{
   box-shadow: 0.5rem 0.5rem 1rem gray;
 }
 div.homepage div.item:hover{
-  background-color: #d1d7e0;
+  background-color: #d1d7e0;}
 
 /* homepages of user and librarian homepage(table) */
 table.homepage {
